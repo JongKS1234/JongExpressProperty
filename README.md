@@ -51,7 +51,7 @@ Click the icons to contact me instantly
 ---
 
 ## 📍 Location
-Malaysia
+Malaysia Miri
 
 ---
 
