@@ -1,6 +1,6 @@
 # JongExpressProperty
 <h1 align="center">🏠 Jong Express Property</h1>
-<p align="center">Helping you buy, sell & rent properties in Malaysia</p>
+<p align="center">Helping you buy, sell & rent properties in Miri</p>
 
 ---
 
