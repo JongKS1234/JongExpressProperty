@@ -19,9 +19,21 @@ Fast response • Trusted service • Best deals
 ---
 
 ## 📱 Contact Me
-📞 WhatsApp: https://wa.me/60169242000  
-📸 Instagram: https://instagram.com/jongks1234  
-📘 Facebook: https://www.facebook.com/jongexpresssproperty  
+<p align="center">
+  <a href="https://wa.me/60169242000">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp.png" width="40"/>
+  </a>
+  <a href="https://instagram.com/jongks1234">
+    <img src="https://img.icons8.com/color/48/000000/instagram-new.png" width="40"/>
+  </a>
+  <a href="https://www.facebook.com/jongexpresssproperty">
+    <img src="https://img.icons8.com/color/48/000000/facebook-new.png" width="40"/>
+  </a>
+</p>
+
+<p align="center">
+Click the icons to contact me مباشرة 🚀
+</p>
 
 ---
 
