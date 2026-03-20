@@ -19,17 +19,30 @@ Fast response • Trusted service • Best deals
 ---
 
 ## 📱 Contact Me
-<p align="center">
-  <a href="https://wa.me/60169242000">
-    <img src="https://img.icons8.com/color/48/000000/whatsapp.png" width="40"/>
-  </a>
-  <a href="https://instagram.com/jongks1234">
-    <img src="https://img.icons8.com/color/48/000000/instagram-new.png" width="40"/>
-  </a>
-  <a href="https://www.facebook.com/jongexpresssproperty">
-    <img src="https://img.icons8.com/color/48/000000/facebook-new.png" width="40"/>
-  </a>
-</p>
+<div align="center">
+
+<a href="https://wa.me/60169242000" target="_blank">
+  <img src="https://img.icons8.com/color/48/000000/whatsapp.png"
+       style="margin:10px; transition: transform 0.2s;"
+       onmouseover="this.style.transform='scale(1.3)'"
+       onmouseout="this.style.transform='scale(1)'"/>
+</a>
+
+<a href="https://instagram.com/jongks1234" target="_blank">
+  <img src="https://img.icons8.com/color/48/000000/instagram-new.png"
+       style="margin:10px; transition: transform 0.2s;"
+       onmouseover="this.style.transform='scale(1.3)'"
+       onmouseout="this.style.transform='scale(1)'"/>
+</a>
+
+<a href="https://www.facebook.com/jongexpresssproperty" target="_blank">
+  <img src="https://img.icons8.com/color/48/000000/facebook-new.png"
+       style="margin:10px; transition: transform 0.2s;"
+       onmouseover="this.style.transform='scale(1.3)'"
+       onmouseout="this.style.transform='scale(1)'"/>
+</a>
+
+</div>
 
 <p align="center">
 Click the icons to contact me🚀
