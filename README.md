@@ -32,7 +32,7 @@ Fast response • Trusted service • Best deals
 </p>
 
 <p align="center">
-Click the icons to contact me مباشرة 🚀
+Click the icons to contact me🚀
 </p>
 
 ---
