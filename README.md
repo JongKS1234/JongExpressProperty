@@ -5,7 +5,7 @@
 ---
 
 ## 🚀 About Me
-Hi, I’m Jong. I help clients find the best property deals—whether you're buying, selling, or renting.  
+Hi, I’m Jong. I help clients find the best property deals whether you are buying, selling, or renting.  
 Fast response • Trusted service • Best deals
 
 ---
@@ -45,13 +45,13 @@ Fast response • Trusted service • Best deals
 </div>
 
 <p align="center">
-Click the icons to contact me🚀
+Click the icons to contact me instantly
 </p>
 
 ---
 
 ## 📍 Location
-Malaysia Miri
+Malaysia
 
 ---
 
@@ -59,12 +59,12 @@ Malaysia Miri
 🏠 House for sale – Contact for price  
 🏠 Condo for rent – Contact for details  
 
-👉 Message me for more info!
+Message me for more information
 
 ---
 
 ## ⭐ Why Choose Me?
 ✔ Fast response  
-✔ Friendly & honest  
+✔ Friendly and honest  
 ✔ Trusted property agent  
-✔ Good deals & negotiation
+✔ Good deals and negotiation
