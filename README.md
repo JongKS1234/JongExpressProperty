@@ -38,7 +38,7 @@ Click the icons to contact me🚀
 ---
 
 ## 📍 Location
-Malaysia 🇲🇾
+Malaysia Miri
 
 ---
 
