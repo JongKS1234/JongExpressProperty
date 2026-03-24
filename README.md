@@ -4,7 +4,7 @@
 </p>
 
 <h1 align="center">🏠 Jong Express Property</h1>
-<p align="center"><b>Helping you buy, sell & rent properties in Malaysia</b></p>
+<p align="center"><b>Helping you buy, sell & rent properties in Miri</b></p>
 
 ---
 
