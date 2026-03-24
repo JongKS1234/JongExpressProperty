@@ -15,18 +15,26 @@ body {
 }
 
 /* Banner */
+.banner {
+  max-height: 400px;
+  overflow: hidden;
+}
+
 .banner img {
   width: 100%;
   display: block;
+  transform: scale(1.05);
   opacity: 0;
-  animation: fadeIn 0.8s ease-in forwards;
+  animation: zoomFade 1s ease forwards;
 }
 
-@keyframes fadeIn {
+@keyframes zoomFade {
   to {
+    transform: scale(1);
     opacity: 1;
   }
 }
+
 /* Section */
 .section {
   padding: 40px 20px;
@@ -49,7 +57,7 @@ body {
   background: #16a34a;
 }
 
-/* Social icons */
+/* Icons */
 .icon {
   width: 50px;
   margin: 10px;
@@ -75,7 +83,7 @@ body {
   transform: translateY(-10px);
 }
 
-/* Floating WhatsApp */
+/* WhatsApp Floating */
 .whatsapp {
   position: fixed;
   bottom: 20px;
@@ -106,6 +114,15 @@ body {
   <p>Helping you buy, sell & rent properties in Malaysia</p>
 </div>
 
+<!-- About Me -->
+<div class="section">
+  <h2>About Me</h2>
+  <p>
+    Hi, I’m Jong. I help clients find the best property deals whether you are buying, selling, or renting.
+    I focus on fast response, trusted service, and helping you get the best value.
+  </p>
+</div>
+
 <!-- Contact -->
 <div class="section">
   <h2>Contact Me</h2>
@@ -132,7 +149,6 @@ body {
   <div class="card">House for Rent</div>
   <div class="card">Property Consultation</div>
   <div class="card">Investment Advice</div>
-
 </div>
 
 <!-- Listings -->
@@ -146,6 +162,17 @@ body {
   <div class="card">
     🏢 Condo for Rent <br> Contact for details
   </div>
+</div>
+
+<!-- Trusted Section -->
+<div class="section">
+  <h2>Why Choose Me</h2>
+  <p>
+    ✔ Fast response<br>
+    ✔ Friendly and honest<br>
+    ✔ Trusted property agent<br>
+    ✔ Strong negotiation skills
+  </p>
 </div>
 
 <!-- Button -->
