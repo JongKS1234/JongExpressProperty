@@ -1,7 +1,10 @@
 # JongExpressProperty
-<h1 align="center">🏠 Jong Express Property</h1>
-<p align="center">Helping you buy, sell & rent properties in Miri</p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/JONG-NEW/JongExpressProperty/main/653713034_122101231947019043_183818896767957459_n.png" width="100%" />
+</p>
 
+<h1 align="center">Jong Express Property</h1>
+<p align="center">Helping you buy, sell & rent properties in Miri</p>
 ---
 
 ## 🚀 About Me
