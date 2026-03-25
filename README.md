@@ -80,6 +80,15 @@
 
 </div>
 </div>
+<!-- HIGHLIGHT -->
+<div class="section">
+  <h2>Why Clients Choose Me | 为什么客户选择我</h2>
+
+  <div class="card">⚡ Fast Response<br>快速回复</div>
+  <div class="card">🤝 Trusted Agent<br>专业可靠</div>
+  <div class="card">💰 Best Deals<br>最佳价格</div>
+  <div class="card">📈 Strong Negotiation<br>优秀谈判能力</div>
+</div>
 <!-- Trusted -->
 <div class="section">
   <h2>Why Choose Me | 为什么选择我</h2>
