@@ -41,6 +41,8 @@
 
   <div class="card">House for Sale<br>房屋出售</div>
   <div class="card">House for Rent<br>房屋出租</div>
+  <div class="card">Land for Sale<br>土地出售</div>
+  <div class="card">Land for Rent<br>土地出租</div>
   <div class="card">Property Consultation<br>房产咨询</div>
   <div class="card">Investment Advice<br>投资建议</div>
 </div>
@@ -50,12 +52,25 @@
   <h2>Featured Listings | 精选房源</h2>
 
   <div class="card">
-    🏠 House for Sale <br>房屋出售<br>Contact for price 请联系询价
+    🏠 House for Sale <br>房屋出售<br>
+    Contact for price 请联系询价
   </div>
 
   <div class="card">
-    🏢 Condo for Rent <br>公寓出租<br>Contact for details 请联系了解详情
+    🏢 Condo for Rent <br>公寓出租<br>
+    Contact for details 请联系了解详情
   </div>
+
+  <div class="card">
+    🌄 Land for Sale <br>土地出售<br>
+    Contact for price 请联系询价
+  </div>
+
+  <div class="card">
+    🌱 Land for Rent <br>土地出租<br>
+    Contact for details 请联系了解详情
+  </div>
+
 </div>
 
 <!-- Trusted -->
