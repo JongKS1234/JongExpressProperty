@@ -1,110 +1,77 @@
-<!-- 🔥 BANNER -->
-<p align="center">
-  <img src="https://raw.githubusercontent.com/JONG-NEW/JongExpressProperty/main/653713034_122101231947019043_183818896767957459_n.png" width="100%" />
-</p>
+<!-- Title -->
+<div class="section">
+  <h1>Jong Express Property</h1>
+  <p>Helping you buy, sell & rent properties in Malaysia<br>
+  马来西亚房产买卖与租赁服务</p>
+</div>
 
-<h1 align="center">🏠 Jong Express Property</h1>
-<p align="center"><b>Helping you buy, sell & rent properties in Miri</b></p>
+<!-- About Me -->
+<div class="section">
+  <h2>About Me | 关于我</h2>
+  <p>
+    Hi, I’m Jong. I help clients find the best property deals whether you are buying, selling, or renting.<br>
+    我是Jong，我帮助客户寻找最合适的房产，无论是买房、卖房还是租房。<br><br>
 
----
+    Fast response, trusted service, and best value.<br>
+    快速回复，值得信赖，提供最优价值。
+  </p>
+</div>
 
-<!-- 🚀 ABOUT -->
-## 🚀 About Me
-Hi, I’m Jong. I help clients find the best property deals whether you are buying, selling, or renting.  
-Fast response • Trusted service • Best deals
+<!-- Contact -->
+<div class="section">
+  <h2>Contact Me | 联系我</h2>
 
----
+  <a href="https://wa.me/60169242000">
+    <img class="icon" src="https://img.icons8.com/color/48/000000/whatsapp.png">
+  </a>
 
-<!-- 🏡 SERVICES -->
-## 🏡 My Services
-✔ House for sale  
-✔ House for rent  
-✔ Property consultation  
-✔ Investment advice  
+  <a href="https://instagram.com/jongks1234">
+    <img class="icon" src="https://img.icons8.com/color/48/000000/instagram-new.png">
+  </a>
 
----
-
-<!-- 📱 CONTACT BUTTONS -->
-## 📱 Contact Me
-<div align="center">
-
-<a href="https://wa.me/60169242000" target="_blank">
-  <img src="https://img.icons8.com/color/48/000000/whatsapp.png"
-       style="margin:15px; transition: transform 0.2s;"
-       onmouseover="this.style.transform='scale(1.4)'"
-       onmouseout="this.style.transform='scale(1)'"/>
-</a>
-
-<a href="https://instagram.com/jongks1234" target="_blank">
-  <img src="https://img.icons8.com/color/48/000000/instagram-new.png"
-       style="margin:15px; transition: transform 0.2s;"
-       onmouseover="this.style.transform='scale(1.4)'"
-       onmouseout="this.style.transform='scale(1)'"/>
-</a>
-
-<a href="https://www.facebook.com/jongexpresssproperty" target="_blank">
-  <img src="https://img.icons8.com/color/48/000000/facebook-new.png"
-       style="margin:15px; transition: transform 0.2s;"
-       onmouseover="this.style.transform='scale(1.4)'"
-       onmouseout="this.style.transform='scale(1)'"/>
-</a>
+  <a href="https://www.facebook.com/jongexpresssproperty">
+    <img class="icon" src="https://img.icons8.com/color/48/000000/facebook-new.png">
+  </a>
 
 </div>
 
-<p align="center"><b>Click any icon to contact me instantly</b></p>
+<!-- Services -->
+<div class="section">
+  <h2>My Services | 我的服务</h2>
 
----
+  <div class="card">House for Sale<br>房屋出售</div>
+  <div class="card">House for Rent<br>房屋出租</div>
+  <div class="card">Property Consultation<br>房产咨询</div>
+  <div class="card">Investment Advice<br>投资建议</div>
+</div>
 
-<!-- 💬 QUICK WHATSAPP BUTTON -->
-## 💬 Quick Contact
-<p align="center">
-  <a href="https://wa.me/60169242000">
-    <img src="https://img.shields.io/badge/Chat%20on%20WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/>
+<!-- Listings -->
+<div class="section">
+  <h2>Featured Listings | 精选房源</h2>
+
+  <div class="card">
+    🏠 House for Sale <br>房屋出售<br>Contact for price 请联系询价
+  </div>
+
+  <div class="card">
+    🏢 Condo for Rent <br>公寓出租<br>Contact for details 请联系了解详情
+  </div>
+</div>
+
+<!-- Trusted -->
+<div class="section">
+  <h2>Why Choose Me | 为什么选择我</h2>
+  <p>
+    ✔ Fast response 快速回复<br>
+    ✔ Friendly and honest 友好诚信<br>
+    ✔ Trusted property agent 专业可靠的房产代理<br>
+    ✔ Strong negotiation skills 优秀谈判能力
+  </p>
+</div>
+
+<!-- Button -->
+<div class="section">
+  <a class="btn" href="https://wa.me/60169242000">
+    Chat on WhatsApp | WhatsApp联系我
   </a>
-</p>
-
----
-
-<!-- 🏠 LISTINGS -->
-## 🔥 Featured Listings
-
-<table>
-<tr>
-<td align="center">
-🏠 <b>House for Sale</b><br/>
-Price: Contact<br/>
-Location: Malaysia
-</td>
-
-<td align="center">
-🏢 <b>Condo for Rent</b><br/>
-Price: Contact<br/>
-Location: Malaysia
-</td>
-</tr>
-</table>
-
-<p align="center">Message me for full details</p>
-
----
-
-<!-- ⭐ TRUST -->
-## ⭐ Why Choose Me
-✔ Fast response  
-✔ Friendly and honest  
-✔ Trusted property agent  
-✔ Strong negotiation skills  
-
----
-
-<!-- 📊 EXTRA -->
-## 📊 Business Info
-📍 Location: Malaysia,Sarawak,Miri
-📞 WhatsApp: +60169242000  
-
----
-
-<!-- 🔥 FOOTER -->
-<p align="center">
-⭐ Jong Express Property • Your Trusted Agent ⭐
-</p>
+</div>
