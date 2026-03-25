@@ -1,7 +1,7 @@
 <!-- Title -->
 <div class="section">
   <h1>Jong Express Property</h1>
-  <p>Helping you buy, sell & rent properties in Malaysia<br>
+  <p>Helping you buy, sell & rent properties in Miri<br>
   马来西亚房产买卖与租赁服务</p>
 </div>
 
