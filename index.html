@@ -222,8 +222,8 @@ body {
 
 <!-- JAVASCRIPT -->
 <script>
-function sendWhatsApp() {
-  let msg = "Hi, I am interested in your property listings.";
+function sendWhatsApp(property) {
+  let msg = "Hi, I am interested in: " + property;
   let url = "https://wa.me/60169242000?text=" + encodeURIComponent(msg);
   window.open(url, "_blank");
 }
