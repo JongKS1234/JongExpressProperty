@@ -94,9 +94,6 @@ body {
 }
 </style>
 </head>
-
-<body>
-
 <!-- Banner -->
 <div class="banner">
   <img src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/main/653713034_122101231947019043_183818896767957459_n.png">
@@ -139,9 +136,6 @@ body {
 <!-- PROPERTY LISTINGS -->
 <div class="section">
   <h2>Latest Listings | 最新房源</h2>
-
-  
-
   <div class="flex" id="property-list">
 
     <!-- COPY FROM HERE ↓↓↓ -->
@@ -341,7 +335,7 @@ body {
 <div class="section">
   <p>
     © Jong Express Property<br>
-    Your trusted property agent in Miri
+    Your trusted property agent in Sarawak
   </p>
 </div>
 
@@ -351,13 +345,12 @@ body {
 </a>
 
 <!-- JAVASCRIPT -->
-<script>
-function sendWhatsApp(property) {
-  let msg = "Hi, I am interested in: " + property;
-  let url = "https://wa.me/60169242000?text=" + encodeURIComponent(msg);
-  window.open(url, "_blank");
-}
-</script>
-
-</body>
-</html>
+    <script>
+      function sendWhatsApp() {
+        let msg = "Hi, I am interested in your property listings.";
+        let url = "https://wa.me/60169242000?text=" + encodeURIComponent(msg);
+        window.open(url, "_blank");
+      }
+    </script>
+  </body>
+  </html>
