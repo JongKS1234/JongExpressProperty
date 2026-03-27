@@ -140,6 +140,65 @@ body {
 <div class="section">
   <h2>Latest Listings | 最新房源</h2>
 
+  <div class="slider">
+  <div class="slides">
+    <img src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Aurum-Pine-Residence/6210761922974519194.jpg" alt="Property 1">
+    <img src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Aurum-Pine-Residence/6210761922974519194.jpg" alt="Property 2">
+    <!-- Add more images here -->
+  </div>
+  <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+  <button class="next" onclick="plusSlides(1)">&#10095;</button>
+</div>
+
+<style>
+.slider {
+  position: relative;
+  max-width: 600px; /* adjust width */
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.slides img {
+  width: 100%;
+  display: none;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  background-color: rgba(0,0,0,0.5);
+  border: none;
+  cursor: pointer;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+</style>
+
+<script>
+let slideIndex = 0;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+  let slides = document.querySelectorAll('.slides img');
+  if (n >= slides.length) { slideIndex = 0; }
+  if (n < 0) { slideIndex = slides.length - 1; }
+  slides.forEach((img, i) => img.style.display = (i === slideIndex) ? 'block' : 'none');
+}
+</script>
+
   <div class="flex" id="property-list">
 
     <!-- COPY FROM HERE ↓↓↓ -->
