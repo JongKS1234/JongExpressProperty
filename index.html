@@ -1,142 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jong Express Property</title>
-
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0f172a;
-  color: white;
-  text-align: center;
-}
-
-/* Banner */
-.banner img {
-  width: 100%;
-  display: block;
-}
-
-/* Section */
-.section {
-  padding: 60px 20px;
-}
-
-/* Hero */
-.hero h1 {
-  font-size: 36px;
-}
-
-.hero p {
-  font-size: 18px;
-}
-
-/* Button */
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 14px 28px;
-  border-radius: 30px;
-  background: #22c55e;
-  color: white;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  transform: scale(1.1);
-  background: #16a34a;
-}
-
-/* Cards */
-.card {
-  background: #1e293b;
-  padding: 20px;
-  border-radius: 15px;
-  width: 220px;
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-10px) scale(1.05);
-}
-
-/* Flex */
-.flex {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-/* Icons */
-.icon {
-  width: 50px;
-  transition: 0.3s;
-}
-
-.icon:hover {
-  transform: scale(1.3);
-}
-
-/* Floating WhatsApp */
-.whatsapp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-}
-
-.whatsapp img {
-  width: 60px;
-}
-</style>
-</head>
-<!-- Banner -->
-<div class="banner">
-  <img src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/main/653713034_122101231947019043_183818896767957459_n.png">
-</div>
-
-<!-- HERO -->
-<div class="section hero">
-  <h1>Find Your Dream Property Today 🏡</h1>
-  <p>
-    Buy • Sell • Rent in Miri, Sarawak<br>
-    在美里买卖与租赁房产
-  </p>
-
-  <a class="btn" href="#" onclick="sendWhatsApp()">
-    Contact Me Now 联系我
-  </a>
-</div>
-
-<!-- ABOUT -->
-<div class="section">
-  <h2>About Me | 关于我</h2>
-  <p>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jong Express Property</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #0f172a;
+        color: white;
+        text-align: center;
+      }
+      /* Banner */
+      .banner img {
+        width: 100%;
+        display: block;
+      }
+      /* Section */
+      .section {
+        padding: 60px 20px;
+      }
+      /* Hero */
+      .hero h1 {
+        font-size: 36px;
+      }
+      .hero p {
+        font-size: 18px;
+      }
+      /* Button */
+      .btn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 14px 28px;
+        border-radius: 30px;
+        background: #22c55e;
+        color: white;
+        text-decoration: none;
+        transition: 0.3s;
+      }
+      .btn:hover {
+      transform: scale(1.1);
+      background: #16a34a;
+      }
+      /* Cards */
+      .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 15px;
+      width: 220px;
+      transition: 0.3s;
+      }
+      .card:hover {
+      transform: translateY(-10px) scale(1.05);
+      }
+      /* Flex */
+      .flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      }
+      /* Icons */
+      .icon {
+      width: 50px;
+      transition: 0.3s;
+      }
+      .icon:hover {
+      transform: scale(1.3);
+      }
+      /* Floating WhatsApp */
+      .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      }
+      .whatsapp img {
+      width: 60px;
+      }
+    </style>
+  </head>
+  <!-- Banner -->
+  <div class="banner">
+    <img src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/main/653713034_122101231947019043_183818896767957459_n.png">
+  </div>
+  <!-- HERO -->
+  <div class="section hero">
+    <h1>Find Your Dream Property Today 🏡</h1>
+    <p>
+      Buy • Sell • Rent in Miri, Sarawak<br>
+      在美里买卖与租赁房产
+    </p>
+    <a class="btn" href="#" onclick="sendWhatsApp()">
+      Contact Me Now 联系我
+    </a>
+  </div>
+  <!-- ABOUT -->
+  <div class="section">
+    <h2>About Me | 关于我</h2>
+    <p>
     Hi, I’m Jong. I help you buy, sell and rent properties with fast response and trusted service.<br>
     我是Jong，为您提供快速、可靠的房产服务。
-  </p>
-</div>
-
-<!-- SERVICES -->
-<div class="section">
-  <h2>Services | 服务</h2>
-
-  <div class="flex">
-    <div class="card">🏠 House<br>房屋</div>
-    <div class="card">🏢 Condo<br>公寓</div>
-    <div class="card">🌄 Land<br>土地</div>
-    <div class="card">🏬 Shop<br>商铺</div>
+    </p>
   </div>
-</div>
-
-<!-- PROPERTY LISTINGS -->
-<div class="section">
-  <h2>Latest Listings | 最新房源</h2>
-  <div class="flex" id="property-list">
+  <!-- SERVICES -->
+  <div class="section">
+  <h2>Services | 服务</h2>
+    <div class="flex">
+      <div class="card">🏠 House<br>房屋</div>
+      <div class="card">🏢 Condo<br>公寓</div>
+      <div class="card">🌄 Land<br>土地</div>
+      <div class="card">🏬 Shop<br>商铺</div>
+    </div>
+  </div>
+  <!-- PROPERTY LISTINGS -->
+  <div class="section">
+    <h2>Latest Listings | 最新房源</h2>
+    <div class="flex" id="property-list">
 
     <!-- COPY FROM HERE ↓↓↓ -->
 
