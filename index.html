@@ -40,6 +40,7 @@ body {
   text-decoration: none;
   transition: 0.3s;
   box-shadow: 0 0 10px rgba(34,197,94,0.5);
+  cursor: pointer;
 }
 .btn:hover {
   transform: scale(1.1);
@@ -56,7 +57,7 @@ body {
 
 /* Premium Card */
 .card {
-  width: 300px;
+  width: 350px;
   padding: 15px;
   border-radius: 20px;
   background: linear-gradient(145deg, #1e293b, #0f172a);
@@ -67,50 +68,54 @@ body {
   transform: translateY(-10px) scale(1.03);
 }
 
-/* iProperty Style Slider */
-.slider {
+/* Slider Styles */
+.slider-container {
   position: relative;
   overflow: hidden;
   border-radius: 15px;
+  margin-bottom: 15px;
 }
 
-.slides {
+.slider-images {
   display: flex;
-  transition: transform 0.5s ease;
+  transition: transform 0.3s ease;
 }
 
-.slide {
-  min-width: 100%;
-}
-
-.slide img {
+.slide-img {
   width: 100%;
-  display: block;
+  flex-shrink: 0;
   border-radius: 15px;
+  height: 250px;
+  object-fit: cover;
 }
 
-/* Arrows */
-.prev, .next {
+.prev-btn, .next-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.6);
   color: white;
   border: none;
-  padding: 10px;
+  padding: 12px 16px;
   cursor: pointer;
   border-radius: 50%;
   font-size: 18px;
+  transition: 0.3s;
 }
 
-.prev { left: 10px; }
-.next { right: 10px; }
+.prev-btn:hover, .next-btn:hover {
+  background: rgba(0,0,0,0.9);
+  transform: translateY(-50%) scale(1.1);
 }
+
+.prev-btn { left: 10px; }
+.next-btn { right: 10px; }
 
 /* Icons */
 .icon {
   width: 50px;
   transition: 0.3s;
+  cursor: pointer;
 }
 .icon:hover {
   transform: scale(1.3);
@@ -121,9 +126,51 @@ body {
   position: fixed;
   bottom: 20px;
   right: 20px;
+  cursor: pointer;
+  z-index: 100;
 }
 .whatsapp img {
   width: 60px;
+  transition: 0.3s;
+}
+.whatsapp img:hover {
+  transform: scale(1.1);
+}
+
+/* Dots indicator */
+.dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #555;
+  margin: 0 3px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dot.active {
+  background: #22c55e;
+  width: 20px;
+  border-radius: 4px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+  }
+  .slide-img {
+    height: 200px;
+  }
+  .hero h1 {
+    font-size: 28px;
+  }
 }
 </style>
 </head>
@@ -149,7 +196,7 @@ body {
 <div class="section">
   <h2>About Me | 关于我</h2>
   <p>
-    Hi, I’m Jong. I help you buy, sell and rent properties with fast response and trusted service.<br>
+    Hi, I'm Jong. I help you buy, sell and rent properties with fast response and trusted service.<br>
     我是Jong，为您提供快速、可靠的房产服务。
   </p>
 </div>
@@ -171,54 +218,52 @@ body {
 
   <div class="flex">
 
-    <!-- PROPERTY 1 -->
+    <!-- PROPERTY 1 - Aurum Pine Residence -->
     <div class="card">
-
-      <div class="slider">
-  <img class="slide active" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Aurum-Pine-Residence/6210761922974519194.jpg">
-  <img class="slide" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Aurum-Pine-Residence/6210761922974519195.jpg">
-  <img class="slide" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Aurum-Pine-Residence/6210761922974519197.jpg">
-  <img class="slide" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Aurum-Pine-Residence/6210761922974519199.jpg">
-  <img class="slide" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Aurum-Pine-Residence/6210761922974519200.jpg">
-  <img class="slide" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Aurum-Pine-Residence/6210761922974519201.jpg">
-  <img class="slide" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Aurum-Pine-Residence/6210761922974519202.jpg">
-  <img class="slide" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Aurum-Pine-Residence/6210761922974519203.jpg">
-</div>
-
+      <div class="slider-container" data-current="0">
+        <div class="slider-images">
+          <img class="slide-img" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Aurum-Pine-Residence/6210761922974519194.jpg">
+          <img class="slide-img" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Aurum-Pine-Residence/6210761922974519195.jpg">
+          <img class="slide-img" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Aurum-Pine-Residence/6210761922974519197.jpg">
+          <img class="slide-img" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Aurum-Pine-Residence/6210761922974519199.jpg">
+          <img class="slide-img" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Aurum-Pine-Residence/6210761922974519200.jpg">
+          <img class="slide-img" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Aurum-Pine-Residence/6210761922974519201.jpg">
+          <img class="slide-img" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Aurum-Pine-Residence/6210761922974519202.jpg">
+          <img class="slide-img" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Aurum-Pine-Residence/6210761922974519203.jpg">
+        </div>
+        <button class="prev-btn" onclick="changeSlide(this, -1)">❮</button>
+        <button class="next-btn" onclick="changeSlide(this, 1)">❯</button>
+        <div class="dots"></div>
+      </div>
       <h3>🏡 Aurum Pine Residence</h3>
       <p>📍 Jalan Riam, Miri</p>
       <p>4+1 Bedrooms • 5 Bathrooms</p>
       <p style="color:#22c55e;"><b>RM 1,018,000</b></p>
-
-      <a class="btn" onclick="sendWhatsApp('Aurum Pine Residence RM1018000')">
-        Ask Now
-      </a>
-
+      <a class="btn" onclick="sendWhatsApp('Aurum Pine Residence RM1018000')">Ask Now</a>
     </div>
 
-    <!-- PROPERTY 2 -->
+    <!-- PROPERTY 2 - Double Storey Bungalow -->
     <div class="card">
-
-      <div class="slider">
-  <img class="slide active" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Double-Storey-Bungalow-at-Krokop/6215265522601889534.jpg">
-  <img class="slide" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Double-Storey-Bungalow-at-Krokop/6215265522601889535.jpg">
-  <img class="slide" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Double-Storey-Bungalow-at-Krokop/6215265522601889536.jpg">
-  <img class="slide" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Double-Storey-Bungalow-at-Krokop/6215265522601889537.jpg">
-  <img class="slide" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Double-Storey-Bungalow-at-Krokop/6215265522601889538.jpg">
-  <img class="slide" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Double-Storey-Bungalow-at-Krokop/6215265522601889539.jpg">
-  <img class="slide" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Double-Storey-Bungalow-at-Krokop/6215265522601889540.jpg">
-  <img class="slide" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Double-Storey-Bungalow-at-Krokop/6215265522601889541.jpg">
-</div>
-
+      <div class="slider-container" data-current="0">
+        <div class="slider-images">
+          <img class="slide-img" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Double-Storey-Bungalow-at-Krokop/6215265522601889534.jpg">
+          <img class="slide-img" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Double-Storey-Bungalow-at-Krokop/6215265522601889535.jpg">
+          <img class="slide-img" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Double-Storey-Bungalow-at-Krokop/6215265522601889536.jpg">
+          <img class="slide-img" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Double-Storey-Bungalow-at-Krokop/6215265522601889537.jpg">
+          <img class="slide-img" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Double-Storey-Bungalow-at-Krokop/6215265522601889538.jpg">
+          <img class="slide-img" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Double-Storey-Bungalow-at-Krokop/6215265522601889539.jpg">
+          <img class="slide-img" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Double-Storey-Bungalow-at-Krokop/6215265522601889540.jpg">
+          <img class="slide-img" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Double-Storey-Bungalow-at-Krokop/6215265522601889541.jpg">
+        </div>
+        <button class="prev-btn" onclick="changeSlide(this, -1)">❮</button>
+        <button class="next-btn" onclick="changeSlide(this, 1)">❯</button>
+        <div class="dots"></div>
+      </div>
       <h3>🏡 Double Storey Bungalow</h3>
       <p>📍 Krokop, Miri</p>
       <p>4 Bedrooms • 3 Bathrooms</p>
-      <p style="color:#22c55e;"><b>Renovated • Large Land<br>RM1,500,000</b></p>
-
-      <a class="btn" onclick="sendWhatsApp('Double Storey Bungalow Krokop Miri')">
-        Ask Now
-      </a>
-
+      <p style="color:#22c55e;"><b>Renovated • Large Land<br>RM 1,500,000</b></p>
+      <a class="btn" onclick="sendWhatsApp('Double Storey Bungalow Krokop Miri RM1500000')">Ask Now</a>
     </div>
 
   </div>
@@ -266,62 +311,146 @@ body {
 
 <!-- SCRIPT -->
 <script>
+// WhatsApp function
 function sendWhatsApp(msg = "Hi, I am interested in your property listings.") {
   let url = "https://wa.me/60169242000?text=" + encodeURIComponent(msg);
   window.open(url, "_blank");
 }
 
-/* AUTO SLIDER */
-setInterval(() => {
-  let sliders = document.querySelectorAll('.slider');
+// Slider function
+function changeSlide(button, direction) {
+  const container = button.closest('.slider-container');
+  const imagesDiv = container.querySelector('.slider-images');
+  const slides = container.querySelectorAll('.slide-img');
+  const totalSlides = slides.length;
+  
+  let currentIndex = parseInt(container.getAttribute('data-current')) || 0;
+  let newIndex = currentIndex + direction;
+  
+  if (newIndex < 0) newIndex = totalSlides - 1;
+  if (newIndex >= totalSlides) newIndex = 0;
+  
+  container.setAttribute('data-current', newIndex);
+  imagesDiv.style.transform = `translateX(-${newIndex * 100}%)`;
+  
+  // Update dots
+  updateDots(container, newIndex);
+}
 
-  sliders.forEach(slider => {
-    let slides = slider.querySelectorAll('.slide');
-    let active = slider.querySelector('.active');
-    let index = Array.from(slides).indexOf(active);
-
-    slides[index].classList.remove('active');
-    slides[(index + 1) % slides.length].classList.add('active');
-  });
-}, 3000);
-</script>
-<script>
-document.querySelectorAll('.slider').forEach((slider) => {
-
-  let slides = slider.querySelector('.slides');
-  let total = slider.querySelectorAll('.slide').length;
-  let index = 0;
-
-  slider.querySelector('.next').onclick = () => {
-    index = (index + 1) % total;
-    slides.style.transform = `translateX(-${index * 100}%)`;
-  };
-
-  slider.querySelector('.prev').onclick = () => {
-    index = (index - 1 + total) % total;
-    slides.style.transform = `translateX(-${index * 100}%)`;
-  };
-
-  // Swipe support (mobile)
-  let startX = 0;
-
-  slider.addEventListener('touchstart', e => {
-    startX = e.touches[0].clientX;
-  });
-
-  slider.addEventListener('touchend', e => {
-    let endX = e.changedTouches[0].clientX;
-
-    if (startX - endX > 50) {
-      index = (index + 1) % total;
-    } else if (endX - startX > 50) {
-      index = (index - 1 + total) % total;
+// Update dot indicators
+function updateDots(container, activeIndex) {
+  const dots = container.querySelectorAll('.dot');
+  dots.forEach((dot, index) => {
+    if (index === activeIndex) {
+      dot.classList.add('active');
+    } else {
+      dot.classList.remove('active');
     }
-
-    slides.style.transform = `translateX(-${index * 100}%)`;
   });
+}
 
-});
+// Initialize all sliders
+function initSliders() {
+  document.querySelectorAll('.slider-container').forEach(container => {
+    const imagesDiv = container.querySelector('.slider-images');
+    const slides = container.querySelectorAll('.slide-img');
+    const totalSlides = slides.length;
+    
+    if (totalSlides === 0) return;
+    
+    // Set initial position
+    imagesDiv.style.transform = 'translateX(0%)';
+    container.setAttribute('data-current', '0');
+    
+    // Create dots
+    const dotsDiv = container.querySelector('.dots');
+    if (dotsDiv && totalSlides > 1) {
+      dotsDiv.innerHTML = '';
+      for (let i = 0; i < totalSlides; i++) {
+        const dot = document.createElement('span');
+        dot.classList.add('dot');
+        if (i === 0) dot.classList.add('active');
+        dot.onclick = () => {
+          container.setAttribute('data-current', i);
+          imagesDiv.style.transform = `translateX(-${i * 100}%)`;
+          updateDots(container, i);
+        };
+        dotsDiv.appendChild(dot);
+      }
+    }
+  });
+}
+
+// Auto-slide functionality
+let autoSlideInterval;
+function startAutoSlide() {
+  autoSlideInterval = setInterval(() => {
+    document.querySelectorAll('.slider-container').forEach(container => {
+      const slides = container.querySelectorAll('.slide-img');
+      if (slides.length <= 1) return;
+      
+      let currentIndex = parseInt(container.getAttribute('data-current')) || 0;
+      let newIndex = (currentIndex + 1) % slides.length;
+      
+      container.setAttribute('data-current', newIndex);
+      const imagesDiv = container.querySelector('.slider-images');
+      imagesDiv.style.transform = `translateX(-${newIndex * 100}%)`;
+      updateDots(container, newIndex);
+    });
+  }, 4000);
+}
+
+// Stop auto-slide when user interacts
+function stopAutoSlide() {
+  if (autoSlideInterval) {
+    clearInterval(autoSlideInterval);
+  }
+}
+
+// Add touch/swipe support for mobile
+function addSwipeSupport() {
+  document.querySelectorAll('.slider-container').forEach(container => {
+    let touchStartX = 0;
+    let touchEndX = 0;
+    
+    container.addEventListener('touchstart', (e) => {
+      stopAutoSlide();
+      touchStartX = e.changedTouches[0].screenX;
+    });
+    
+    container.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      handleSwipe(container, touchStartX, touchEndX);
+      startAutoSlide();
+    });
+  });
+}
+
+function handleSwipe(container, startX, endX) {
+  const imagesDiv = container.querySelector('.slider-images');
+  const slides = container.querySelectorAll('.slide-img');
+  const totalSlides = slides.length;
+  let currentIndex = parseInt(container.getAttribute('data-current')) || 0;
+  
+  if (startX - endX > 50) {
+    // Swipe left - next
+    currentIndex = (currentIndex + 1) % totalSlides;
+  } else if (endX - startX > 50) {
+    // Swipe right - previous
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+  }
+  
+  container.setAttribute('data-current', currentIndex);
+  imagesDiv.style.transform = `translateX(-${currentIndex * 100}%)`;
+  updateDots(container, currentIndex);
+}
+
+// Initialize everything when page loads
+window.onload = () => {
+  initSliders();
+  startAutoSlide();
+  addSwipeSupport();
+};
 </script>
 </body>
 </html>
