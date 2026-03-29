@@ -245,20 +245,44 @@ function sendWhatsApp(msg = "Hi, I am interested in your property listings.") {
   window.open(url, "_blank");
 }
 
-/* AUTO SLIDER */
-setInterval(() => {
-  let sliders = document.querySelectorAll('.slider');
+/* iProperty Style Slider */
+.slider {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
 
-  sliders.forEach(slider => {
-    let slides = slider.querySelectorAll('.slide');
-    let active = slider.querySelector('.active');
-    let index = Array.from(slides).indexOf(active);
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
 
-    slides[index].classList.remove('active');
-    slides[(index + 1) % slides.length].classList.add('active');
-  });
+.slide {
+  min-width: 100%;
+}
 
-}, 3000);
+.slide img {
+  width: 100%;
+  display: block;
+  border-radius: 15px;
+}
+
+/* Arrows */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 18px;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
 </script>
 
 </body>
