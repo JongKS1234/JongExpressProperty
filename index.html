@@ -1,267 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jong Express Property</title>
-    <style>
-      body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background: #0f172a;
-        color: white;
-        text-align: center;
-      }
-      /* Banner */
-      .banner img {
-        width: 100%;
-        display: block;
-      }
-      /* Section */
-      .section {
-        padding: 60px 20px;
-      }
-      /* Hero */
-      .hero h1 {
-        font-size: 36px;
-      }
-      .hero p {
-        font-size: 18px;
-      }
-      /* Button */
-      .btn {
-        display: inline-block;
-        margin-top: 20px;
-        padding: 14px 28px;
-        border-radius: 30px;
-        background: #22c55e;
-        color: white;
-        text-decoration: none;
-        transition: 0.3s;
-      }
-      .btn:hover {
-      transform: scale(1.1);
-      background: #16a34a;
-      }
-      /* Cards */
-      .card {
-      background: #1e293b;
-      padding: 20px;
-      border-radius: 15px;
-      width: 220px;
-      transition: 0.3s;
-      }
-      .card:hover {
-      transform: translateY(-10px) scale(1.05);
-      }
-      /* Flex */
-      .flex {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-      }
-      /* Icons */
-      .icon {
-      width: 50px;
-      transition: 0.3s;
-      }
-      .icon:hover {
-      transform: scale(1.3);
-      }
-      /* Floating WhatsApp */
-      .whatsapp {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      }
-      .whatsapp img {
-      width: 60px;
-      }
-    </style>
-  </head>
-  <!-- Banner -->
-  <div class="banner">
-    <img src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/main/653713034_122101231947019043_183818896767957459_n.png">
-  </div>
-  <!-- HERO -->
-  <div class="section hero">
-    <h1>Find Your Dream Property Today 🏡</h1>
-    <p>
-      Buy • Sell • Rent in Miri, Sarawak<br>
-      在美里买卖与租赁房产
-    </p>
-    <a class="btn" href="#" onclick="sendWhatsApp()">
-      Contact Me Now 联系我
-    </a>
-  </div>
-  <!-- ABOUT -->
-  <div class="section">
-    <h2>About Me | 关于我</h2>
-    <p>
-    Hi, I’m Jong. I help you buy, sell and rent properties with fast response and trusted service.<br>
-    我是Jong，为您提供快速、可靠的房产服务。
-    </p>
-  </div>
-  <!-- SERVICES -->
-  <div class="section">
-  <h2>Services | 服务</h2>
-    <div class="flex">
-      <div class="card">🏠 House<br>房屋</div>
-      <div class="card">🏢 Condo<br>公寓</div>
-      <div class="card">🌄 Land<br>土地</div>
-      <div class="card">🏬 Shop<br>商铺</div>
-    </div>
-  </div>
-  <!-- PROPERTY LISTINGS -->
-  <!-- PROPERTY LISTINGS -->
-<div class="section">
-  <h2>Latest Listings | 最新房源</h2>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jong Express Property</title>
 
-  <div class="flex">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+  text-align: center;
+}
 
-    <!-- ===== PROPERTY 1 (AURUM PINE) ===== -->
-    <div class="card filter house" style="width:320px;">
-    <div class="slides">
-      <div class="slide"><img src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Aurum-Pine-Residence/6210761922974519194.jpg" style="width:100%; border-radius:10px; margin-bottom:10px;"></div>
-      <div class="slide"><img src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Aurum-Pine-Residence/6210761922974519195.jpg" style="width:100%; border-radius:10px; margin-bottom:10px;"></div>
-      <div class="slide"><img src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Aurum-Pine-Residence/6210761922974519197.jpg" style="width:100%; border-radius:10px; margin-bottom:10px;"></div>
-      <div class="slide"><img src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Aurum-Pine-Residence/6210761922974519199.jpg" style="width:100%; border-radius:10px; margin-bottom:10px;"></div>
-      <div class="slide"><img src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Aurum-Pine-Residence/6210761922974519200.jpg" style="width:100%; border-radius:10px; margin-bottom:10px;"></div>
-      <div class="slide"><img src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Aurum-Pine-Residence/6210761922974519201.jpg" style="width:100%; border-radius:10px; margin-bottom:10px;"></div>
-      <div class="slide"><img src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Aurum-Pine-Residence/6210761922974519202.jpg" style="width:100%; border-radius:10px; margin-bottom:10px;"></div>
-      <div class="slide"><img src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Aurum-Pine-Residence/6210761922974519203.jpg" style="width:100%; border-radius:10px; margin-bottom:10px;"></div>
-      <div class="slide"><img src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Aurum-Pine-Residence/6210761922974519204.jpg" style="width:100%; border-radius:10px; margin-bottom:10px;"></div>
-      <div class="slide"><img src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Aurum-Pine-Residence/6210761922974519205.jpg" style="width:100%; border-radius:10px; margin-bottom:10px;"></div>
-      <div class="slide"><img src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Aurum-Pine-Residence/6210761922974519206.jpg" style="width:100%; border-radius:10px; margin-bottom:10px;"></div>
-      <div class="slide"><img src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Aurum-Pine-Residence/6210761922974519207.jpg" style="width:100%; border-radius:10px; margin-bottom:10px;"></div>
-      <div class="slide"><img src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Aurum-Pine-Residence/6210761922974519208.jpg" style="width:100%; border-radius:10px; margin-bottom:10px;"></div>
-      <div class="slide"><img src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Aurum-Pine-Residence/6210761922974519210.jpg" style="width:100%; border-radius:10px;"></div>
-    </div>
-    
-    <div class="card filter house" style="width:320px;">
+/* Banner */
+.banner img {
+  width: 100%;
+  display: block;
+}
 
-  <h3>🏡 Aurum Pine Residence</h3>
-      <p>📍 Jalan Riam, Miri</p>
+/* Section */
+.section {
+  padding: 60px 20px;
+}
 
-      <p>4+1 Rooms • 5 Bathrooms</p>
-      <p style="color:#22c55e;"><b>RM 1,018,000</b></p>
+/* Hero */
+.hero h1 { font-size: 36px; }
+.hero p { font-size: 18px; }
 
-      <a class="btn" onclick="sendWhatsApp('Aurum Pine Residence RM1018000')">
-        Ask Now
-      </a>
-    </div>
+/* Button */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 28px;
+  border-radius: 30px;
+  background: #22c55e;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+  box-shadow: 0 0 10px rgba(34,197,94,0.5);
+}
+.btn:hover {
+  transform: scale(1.1);
+  background: #16a34a;
+}
 
-    <!-- ===== PROPERTY 2 (KROKOP BUNGALOW) ===== -->
-    <div class="card filter house" style="width:320px;">
+/* Flex */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
 
-      <!-- Slider -->
-      <div class="slider">
-        <img class="slide active" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Double-Storey-Bungalow-at-Krokop/6215265522601889534.jpg">
-        <img class="slide" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Double-Storey-Bungalow-at-Krokop/6215265522601889535.jpg">
-        <img class="slide" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Double-Storey-Bungalow-at-Krokop/6215265522601889536.jpg">
-        <img class="slide" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Double-Storey-Bungalow-at-Krokop/6215265522601889537.jpg">
-        <img class="slide" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Double-Storey-Bungalow-at-Krokop/6215265522601889538.jpg">
-        <img class="slide" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Double-Storey-Bungalow-at-Krokop/6215265522601889539.jpg">
-        <img class="slide" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Double-Storey-Bungalow-at-Krokop/6215265522601889540.jpg">
-        <img class="slide" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Double-Storey-Bungalow-at-Krokop/6215265522601889541.jpg">
-        <img class="slide" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Double-Storey-Bungalow-at-Krokop/6215265522601889542.jpg">
-        <img class="slide" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Double-Storey-Bungalow-at-Krokop/6215265522601889543.jpg">
-        <img class="slide" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Double-Storey-Bungalow-at-Krokop/6215265522601889544.jpg">
-        <img class="slide" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Double-Storey-Bungalow-at-Krokop/6215265522601889545.jpg">
-        <img class="slide" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Double-Storey-Bungalow-at-Krokop/6215265522601889546.jpg">
-        <img class="slide" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Double-Storey-Bungalow-at-Krokop/6215265522601889547.jpg">
-        <img class="slide" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Double-Storey-Bungalow-at-Krokop/6215265522601889548.jpg">
-        <img class="slide" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Double-Storey-Bungalow-at-Krokop/6215265522601889549.jpg">
-        <img class="slide" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Double-Storey-Bungalow-at-Krokop/6215265522601889550.jpg">
-      </div>
-
-      <h3>🏡 Double Storey Bungalow</h3>
-      <p>📍 Krokop, Miri</p>
-
-      <p>4 Bedrooms • 3 Bathrooms</p>
-      <p style="color:#22c55e;"><b>Large Land • Renovated</b></p> 
-
-  <!-- Button -->
-  <a class="btn" href="#" onclick="sendWhatsApp('Double Storey Bungalow Krokop Miri')">
-    Ask Now 立即咨询
-  </a>
- </div>
-</div>
-</div>
-    <!-- Prev/Next buttons -->
-    <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
-    <button class="next" onclick="plusSlides(1)">&#10095;</button>
-
-    <!-- Dots -->
-    <div class="dots">
-      <span class="dot" onclick="currentSlide(0)"></span>
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-      <span class="dot" onclick="currentSlide(4)"></span>
-      <span class="dot" onclick="currentSlide(5)"></span>
-      <span class="dot" onclick="currentSlide(6)"></span>
-      <span class="dot" onclick="currentSlide(7)"></span>
-      <span class="dot" onclick="currentSlide(8)"></span>
-      <span class="dot" onclick="currentSlide(9)"></span>
-      <span class="dot" onclick="currentSlide(10)"></span>
-      <span class="dot" onclick="currentSlide(11)"></span>
-      <span class="dot" onclick="currentSlide(12)"></span>
-      <span class="dot" onclick="currentSlide(13)"></span>
-    </div>
-  </div>
-
-  <style>
-  .slider {
-    position: relative;
-    max-width: 600px;
-    margin: auto;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  }
-
-  .slides .slide { display: none; }
-  .slides img { width: 100%; display: block; border-radius: 10px; }
-
-  .prev, .next {
-    position: absolute;
-    top: 50%;
-    padding: 10px;
-    color: white;
-    font-weight: bold;
-    font-size: 24px;
-    background-color: rgba(0,0,0,0.5);
-    border: none;
-    cursor: pointer;
-    transform: translateY(-50%);
-    border-radius: 50%;
-    user-select: none;
-  }
-
-  .prev { left: 10px; }
-  .next { right: 10px; }
-
-  .dots {
-    text-align: center;
-    margin-top: 10px;
-  }
-
-  .dot {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    margin: 0 4px;
-    background-color: #bbb;
-    border-radius: 50%;
-    cursor: pointer;
-  }
-
-  .dot.active { background-color: #717171; }
-
- /* Premium Card */
-.premium-card {
+/* Premium Card */
+.card {
   width: 300px;
   padding: 15px;
   border-radius: 20px;
@@ -269,79 +63,134 @@
   box-shadow: 0 10px 25px rgba(0,0,0,0.4);
   transition: 0.3s;
 }
-
-.premium-card:hover {
+.card:hover {
   transform: translateY(-10px) scale(1.03);
 }
 
 /* Slider */
 .slider {
-  position: relative;
   overflow: hidden;
   border-radius: 15px;
   margin-bottom: 10px;
 }
-
 .slide {
   display: none;
   width: 100%;
 }
-
 .slide.active {
   display: block;
 }
 
-/* Button Glow */
-.btn {
-  box-shadow: 0 0 10px rgba(34,197,94,0.5);
+/* Icons */
+.icon {
+  width: 50px;
+  transition: 0.3s;
 }
-  </style>
+.icon:hover {
+  transform: scale(1.3);
+}
 
-  <script>
-setInterval(() => {
-  let sliders = document.querySelectorAll('.slider');
+/* WhatsApp floating */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+.whatsapp img {
+  width: 60px;
+}
+</style>
+</head>
 
-  sliders.forEach(slider => {
-    let slides = slider.querySelectorAll('.slide');
-    let active = slider.querySelector('.active');
-    let index = Array.from(slides).indexOf(active);
+<body>
 
-    slides[index].classList.remove('active');
-    slides[(index + 1) % slides.length].classList.add('active');
-  });
-
-}, 3000);
-</script>
-  <!-- Property Image Slider End -->
-
-  <!-- Property Info -->
-  <h3>🏡 Aurum Pine Residence</h3>
-  <p>📍 Jalan Riam, Hilltop, Miri</p>
-  <p style="color:#22c55e;"><b>🔥 Future-Ready Home • Elevated Land • Flood Safe</b></p>
-  <p style="text-align:left;">
-    🏠 2.5 Storey Terrace Corner (Type A1)<br>
-    🛏 4+1 Bedrooms<br>
-    🛁 5 Bathrooms<br>
-    📐 Land Size: 8.28 pts<br>
-    📏 Built-up: 2208.28 sq.ft<br>
-    💰 Price: From RM 1,018,000
-  </p>
-  <p style="text-align:left;">
-    🚕 Nearby:<br>
-    • Opposite Serene Heights Condo<br>
-    • 4 mins to Riam Secondary School<br>
-    • 6 mins to Emart Riam<br>
-    • 5 mins to General Hospital<br>
-    • 7 mins to Airport & Town
-  </p>
-  <a class="btn" href="#" onclick="sendWhatsApp('Aurum Pine Residence RM1018000')">
-    Ask Now 立即咨询
-  </a>
+<!-- Banner -->
+<div class="banner">
+  <img src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/main/653713034_122101231947019043_183818896767957459_n.png">
 </div>
+
+<!-- HERO -->
+<div class="section hero">
+  <h1>Find Your Dream Property Today 🏡</h1>
+  <p>
+    Buy • Sell • Rent in Miri, Sarawak<br>
+    在美里买卖与租赁房产
+  </p>
+  <a class="btn" onclick="sendWhatsApp()">Contact Me Now 联系我</a>
+</div>
+
+<!-- ABOUT -->
+<div class="section">
+  <h2>About Me | 关于我</h2>
+  <p>
+    Hi, I’m Jong. I help you buy, sell and rent properties with fast response and trusted service.<br>
+    我是Jong，为您提供快速、可靠的房产服务。
+  </p>
+</div>
+
+<!-- SERVICES -->
+<div class="section">
+  <h2>Services | 服务</h2>
+  <div class="flex">
+    <div class="card">🏠 House<br>房屋</div>
+    <div class="card">🏢 Condo<br>公寓</div>
+    <div class="card">🌄 Land<br>土地</div>
+    <div class="card">🏬 Shop<br>商铺</div>
+  </div>
+</div>
+
+<!-- PROPERTY LISTINGS -->
+<div class="section">
+  <h2>Latest Listings | 最新房源</h2>
+
+  <div class="flex">
+
+    <!-- PROPERTY 1 -->
+    <div class="card">
+
+      <div class="slider">
+        <img class="slide active" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Aurum-Pine-Residence/6210761922974519194.jpg">
+        <img class="slide" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Aurum-Pine-Residence/6210761922974519195.jpg">
+        <img class="slide" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Aurum-Pine-Residence/6210761922974519197.jpg">
+      </div>
+
+      <h3>🏡 Aurum Pine Residence</h3>
+      <p>📍 Jalan Riam, Miri</p>
+      <p>4+1 Bedrooms • 5 Bathrooms</p>
+      <p style="color:#22c55e;"><b>RM 1,018,000</b></p>
+
+      <a class="btn" onclick="sendWhatsApp('Aurum Pine Residence RM1018000')">
+        Ask Now
+      </a>
+
+    </div>
+
+    <!-- PROPERTY 2 -->
+    <div class="card">
+
+      <div class="slider">
+        <img class="slide active" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Double-Storey-Bungalow-at-Krokop/6215265522601889534.jpg">
+        <img class="slide" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Double-Storey-Bungalow-at-Krokop/6215265522601889535.jpg">
+        <img class="slide" src="https://raw.githubusercontent.com/JongKS1234/JongExpressProperty/Double-Storey-Bungalow-at-Krokop/6215265522601889536.jpg">
+      </div>
+
+      <h3>🏡 Double Storey Bungalow</h3>
+      <p>📍 Krokop, Miri</p>
+      <p>4 Bedrooms • 3 Bathrooms</p>
+      <p style="color:#22c55e;"><b>Renovated • Large Land</b></p>
+
+      <a class="btn" onclick="sendWhatsApp('Double Storey Bungalow Krokop Miri')">
+        Ask Now
+      </a>
+
+    </div>
+
+  </div>
+</div>
+
 <!-- WHY CHOOSE ME -->
 <div class="section">
   <h2>Why Choose Me | 为什么选择我</h2>
-
   <div class="flex">
     <div class="card">⚡ Fast Response<br>快速回复</div>
     <div class="card">🤝 Trusted Agent<br>值得信赖</div>
@@ -350,29 +199,12 @@ setInterval(() => {
   </div>
 </div>
 
-<!-- CALL TO ACTION -->
-<div class="section">
-  <h2>Looking for Property? | 寻找房产？</h2>
-
-  <p>
-    Looking to buy, sell or rent property?<br>
-    Want fast response and best deals?<br><br>
-
-    想买房、卖房或出租吗？<br>
-    想要快速回复和最优惠价格？<br>
-  </p>
-
-  <a class="btn" href="#" onclick="sendWhatsApp()">
-    Contact Me Now
-  </a>
-</div>
-
 <!-- CONTACT -->
 <div class="section">
   <h2>Social Media | 社交媒体</h2>
 
   <div class="flex">
-    <a href="#" onclick="sendWhatsApp()">
+    <a onclick="sendWhatsApp()">
       <img class="icon" src="https://img.icons8.com/color/100/whatsapp--v1.png">
     </a>
 
@@ -388,24 +220,36 @@ setInterval(() => {
 
 <!-- FOOTER -->
 <div class="section">
-  <p>
-    © Jong Express Property<br>
-    Your trusted property agent in Sarawak
-  </p>
+  <p>© Jong Express Property</p>
 </div>
 
 <!-- FLOATING WHATSAPP -->
-<a class="whatsapp" href="#" onclick="sendWhatsApp()">
+<a class="whatsapp" onclick="sendWhatsApp()">
   <img src="https://img.icons8.com/color/100/whatsapp--v1.png">
 </a>
 
-<!-- JAVASCRIPT -->
-    <script>
-      function sendWhatsApp() {
-        let msg = "Hi, I am interested in your property listings.";
-        let url = "https://wa.me/60169242000?text=" + encodeURIComponent(msg);
-        window.open(url, "_blank");
-      }
-    </script>
-  </body>
-  </html>
+<!-- SCRIPT -->
+<script>
+function sendWhatsApp(msg = "Hi, I am interested in your property listings.") {
+  let url = "https://wa.me/60169242000?text=" + encodeURIComponent(msg);
+  window.open(url, "_blank");
+}
+
+/* AUTO SLIDER */
+setInterval(() => {
+  let sliders = document.querySelectorAll('.slider');
+
+  sliders.forEach(slider => {
+    let slides = slider.querySelectorAll('.slide');
+    let active = slider.querySelector('.active');
+    let index = Array.from(slides).indexOf(active);
+
+    slides[index].classList.remove('active');
+    slides[(index + 1) % slides.length].classList.add('active');
+  });
+
+}, 3000);
+</script>
+
+</body>
+</html>
