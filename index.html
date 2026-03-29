@@ -67,18 +67,44 @@ body {
   transform: translateY(-10px) scale(1.03);
 }
 
-/* Slider */
+/* iProperty Style Slider */
 .slider {
+  position: relative;
   overflow: hidden;
   border-radius: 15px;
-  margin-bottom: 10px;
 }
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
 .slide {
-  display: none;
-  width: 100%;
+  min-width: 100%;
 }
-.slide.active {
+
+.slide img {
+  width: 100%;
   display: block;
+  border-radius: 15px;
+}
+
+/* Arrows */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 18px;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
 }
 
 /* Icons */
@@ -245,45 +271,57 @@ function sendWhatsApp(msg = "Hi, I am interested in your property listings.") {
   window.open(url, "_blank");
 }
 
-/* iProperty Style Slider */
-.slider {
-  position: relative;
-  overflow: hidden;
-  border-radius: 15px;
-}
+/* AUTO SLIDER */
+setInterval(() => {
+  let sliders = document.querySelectorAll('.slider');
 
-.slides {
-  display: flex;
-  transition: transform 0.5s ease;
-}
+  sliders.forEach(slider => {
+    let slides = slider.querySelectorAll('.slide');
+    let active = slider.querySelector('.active');
+    let index = Array.from(slides).indexOf(active);
 
-.slide {
-  min-width: 100%;
-}
-
-.slide img {
-  width: 100%;
-  display: block;
-  border-radius: 15px;
-}
-
-/* Arrows */
-.prev, .next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0,0,0,0.5);
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 50%;
-  font-size: 18px;
-}
-
-.prev { left: 10px; }
-.next { right: 10px; }
+    slides[index].classList.remove('active');
+    slides[(index + 1) % slides.length].classList.add('active');
+  });
+}, 3000);
 </script>
+<script>
+document.querySelectorAll('.slider').forEach((slider) => {
 
+  let slides = slider.querySelector('.slides');
+  let total = slider.querySelectorAll('.slide').length;
+  let index = 0;
+
+  slider.querySelector('.next').onclick = () => {
+    index = (index + 1) % total;
+    slides.style.transform = `translateX(-${index * 100}%)`;
+  };
+
+  slider.querySelector('.prev').onclick = () => {
+    index = (index - 1 + total) % total;
+    slides.style.transform = `translateX(-${index * 100}%)`;
+  };
+
+  // Swipe support (mobile)
+  let startX = 0;
+
+  slider.addEventListener('touchstart', e => {
+    startX = e.touches[0].clientX;
+  });
+
+  slider.addEventListener('touchend', e => {
+    let endX = e.changedTouches[0].clientX;
+
+    if (startX - endX > 50) {
+      index = (index + 1) % total;
+    } else if (endX - startX > 50) {
+      index = (index - 1 + total) % total;
+    }
+
+    slides.style.transform = `translateX(-${index * 100}%)`;
+  });
+
+});
+</script>
 </body>
 </html>
